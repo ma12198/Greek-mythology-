@@ -1,1 +1,19 @@
+<html>
+<head>
+  <style>
+     body{
+         text-align: center;
+         background-image: linear-gradient(rgb 96, 192, 70), rgb (255, 255, 255));
+<head>
+  
 
+<body>
+<h1>The Last Olympian</h1>
+<a href="index.html" title="Home">Home</a>
+
+
+
+</body>
+
+
+</html>
