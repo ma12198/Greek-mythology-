@@ -1,140 +1,151 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Your Website - Percy Jackson Books</title>
   <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background-color: #4b8cff;
-      color: white;
-      padding: 30px 0;
-      text-align: center;
-      border-bottom: 5px solid #ffcb00;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.2rem;
-      font-weight: 300;
-    }
-    nav ul {
-      list-style-type: none;
-      padding: 0;
-      text-align: center;
-      background-color: #ffcb00;
-      margin: 0;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    nav ul li {
-      display: inline-block;
-      margin: 0 20px;
-    }
-    nav ul li a {
-      color: #333;
-      text-decoration: none;
-      font-size: 1.1rem;
-      padding: 12px 20px;
-      background-color: #ffffff;
-      border-radius: 8px;
-      transition: all 0.3s ease-in-out;
-    }
-    nav ul li a:hover {
-      background-color: #ff9900;
-      transform: scale(1.1);
-    }
-    .container {
-      width: 80%;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    h2 {
-      color: #4b8cff;
-      font-size: 2rem;
-      border-bottom: 2px solid #ffcb00;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
-    }
-    h3 {
-      color: #ff6f00;
-      font-size: 1.6rem;
-      margin-bottom: 15px;
-    }
-    ul {
-      padding-left: 20px;
-      list-style-type: disc;
-    }
-    ul li {
-      margin-bottom: 10px;
-      font-size: 1.1rem;
-    }
-    footer {
-      background-color: #4b8cff;
-      color: white;
-      text-align: center;
-      padding: 15px 0;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-    }
-    footer p {
-      margin: 0;
-    }
-  </style>
-</head>
+     body{
+         text-align: center;
+         background-image: linear-gradient(rgb(160, 245, 237 ), rgb(198, 249, 189 ), rgb(249, 189, 247 ));
+         min-width: 100%;
+         min-height: 100%;
+      }
+  
+  
+  .bn5 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.bn5:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowingbn5 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowingbn5 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.bn5:active {
+  color: #000;
+}
+
+.bn5:active:after {
+  background: transparent;
+}
+
+.bn5:hover:before {
+  opacity: 1;
+}
+
+.bn5:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #191919;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+</style>
+  
+
+
+
 <body>
-  <!-- Header Section -->
-  <header>
-    <h1>Welcome to the Percy Jackson Book Series</h1>
-    <p>Explore the legendary books of Percy Jackson and his adventures in Greek mythology.</p>
-  </header>
+<h1>Percy Jackson </h1>
 
-  <!-- Navigation Bar -->
-  <nav>
-    <ul>
-      <li><a href="battle-of-the-labyrinth.html">The Battle of the Labyrinth</a></li>
-      <li><a href="the-last-olympian.html">The Last Olympian</a></li>
-      <li><a href="the-lightning-thief.html">The Lightning Thief</a></li>
-      <li><a href="the-sea-of-monsters.html">The Sea of Monsters</a></li>
-      <li><a href="the-titans-curse.html">The Titan's Curse</a></li>
-    </ul>
-  </nav>
+<img src=data:image/jpeg;base64,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 alt="Percy Jackson"
+<border-radius:5px;></border-radius:5px;>
 
-  <!-- Main Content Area -->
-  <div class="container">
-    <h2>Discover the Books</h2>
-    <p>Each book in the Percy Jackson series takes you on a thrilling adventure. From navigating the labyrinth to saving Olympus, each novel is packed with excitement, danger, and mythology!</p>
+<p style="font-family:chewy;"><b>Percy Jackson</b> is story about an ADHD and Dyslexic boy who finds out he is the demigod son of <i>Posidon</i>
+</p>
 
-    <h3>Book List</h3>
-    <ul>
-      <li><strong>The Battle of the Labyrinth:</strong> Percy Jackson faces the challenges of navigating the deadly labyrinth and defeating the monsters that threaten the world.</li>
-      <li><strong>The Last Olympian:</strong> The final battle between the gods and the Titans unfolds in this thrilling conclusion to the series.</li>
-      <li><strong>The Lightning Thief:</strong> Percy discovers he is the son of Poseidon and embarks on a quest to prevent a war among the gods.</li>
-      <li><strong>The Sea of Monsters:</strong> Percy and his friends journey through the Sea of Monsters to retrieve the Golden Fleece that will save their home.</li>
-      <li><strong>The Titan's Curse:</strong> Percy and his friends attempt to rescue Artemis and prevent a terrible prophecy from coming true.</li>
-    </ul>
-  </div>
 
-  <!-- Footer Section -->
-  <footer>
-    <p>&copy; 2024 Percy Jackson Book Series | All Rights Reserved</p>
-  </footer>
+<h2>The Lightning Thief </h2>
 
+<p>
+Twelve-year-old Percy Jackson is on the most dangerous quest of his life. With the help of a satyr and a daughter of Athena, Percy must journey across the United States to catch a thief who has stolen the original weapon of mass destruction — Zeus’ master bolt. Along the way, he must face a host of mythological enemies determined to stop him. Most of all, he must come to terms with a father he has never known, and an Oracle that has warned him of betrayal by a friend.
+</p>
+
+<h2>The Sea of Monsters </h2>
+<p>
+When Thalia’s tree is mysteriously poisoned, the magical borders of Camp Half-Blood begin to fail. Now Percy and his friends have just days to find the only magic item powerful to save the camp before it is overrun by monsters. The catch: they must sail into the Sea of Monsters to find it. Along the way, Percy must stage a daring rescue operation to save his old friend Grover, and he learns a terrible secret about his own family, which makes him question whether being the son of Poseidon is an honor or a curse.
+</p>
+
+<h2>The Titan's Curse</h2>
+<p>
+When Percy Jackson gets an urgent distress call from his friend Grover, he immediately prepares for battle. He knows he will need his powerful demigod allies at his side, his trusty bronze sword Riptide, and… a ride from his mom.<br>
+
+The demigods rush to the rescue to find that Grover has made an important discovery: two powerful half-bloods whose parentage is unknown. But that’s not all that awaits them. The titan lord Kronos has devised his most treacherous plot yet, and the young heroes have just fallen prey.<br>
+
+They’re not the only ones in danger. An ancient monster has arisen — one rumored to be so powerful it could destroy Olympus — and Artemis, the only goddess who might know how to track it, is missing. Now Percy and his friends, along with the Hunters of Artemis, have only a week to find the kidnapped goddess and solve the mystery of the monster she was hunting. Along the way, they must face their most dangerous challenge yet: the chilling prophecy of the titan’s curse.
+</p>
+
+<h2>The Battle of The Labyrinth</h2>
+
+<p>
+Percy Jackson isn’t expecting freshman orientation to be any fun, but when a mysterious mortal acquaintance appears, pursued by demon cheerleaders, things quickly go from bad to worse.<br>
+
+Time is running out for Percy. War between the gods and the Titans is drawing near. Even Camp Half-Blood isn’t safe, as Kronos’ army prepares to invade its once impenetrable borders. To stop them, Percy and his friends must set out on a quest through the Labyrinth — a sprawling underground world with surprises and danger at every turn.<br>
+
+Along the way Percy will confront powerful enemies, find out the truth about the lost god Pan, and face the Titan lord Kronos’ most terrible secret. The final war begins…<br> with the Battle of the Labyrinth.
+</p>
+
+<h2>The Last Olympian </h2>
+
+<p>
+All year the half-bloods have been preparing for battle against the Titans, knowing the odds of victory are grim. Kronos’s army is stronger than ever, and with every god and half-blood he recruits, the evil Titan’s power only grows.<br>
+
+While the Olympians struggle to contain the rampaging monster Typhon, Kronos begins his advance on New York City, where Mount Olympus stands virtually unguarded. Now it’s up to Percy Jackson and an army of young demigods to stop the Lord of Time. In this momentous final book in the New York Times best-selling Percy Jackson and the Olympians series, the long-awaited prophecy surrounding Percy’s sixteenth birthday unfolds. And as the battle for Western civilization rages on the streets of Manhattan, Percy faces a terrifying suspicion that he may be fighting against his own fate. All year the half-bloods have been preparing for battle against the Titans, knowing the odds of victory are grim. Kronos’s army is stronger than ever, and with every god and half-blood he recruits, the evil Titan’s power only grows.<br>
+
+While the Olympians struggle to contain the rampaging monster Typhon, Kronos begins his advance on New York City, where Mount Olympus stands virtually unguarded. Now it’s up to Percy Jackson and an army of young demigods to stop the Lord of Time. In this momentous final book in the New York Times best-selling Percy Jackson and the Olympians series, the long-awaited prophecy surrounding Percy’s sixteenth birthday unfolds. And as the battle for Western civilization rages on the streets of Manhattan, Percy faces a terrifying suspicion that he may be fighting against his own fate.<br>
+</p>
+
+
+ <a href="https://rickriordan.com/series/percy-jackson-and-the-olympians/#" class="bn5">Riordanverse</a>
+
+<a href="Percy" title="The Lightning Thief">Book 1</a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JTZHpPZFauY?si=WIpHERQqQPmcZTR4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </body>
+
+<a href="Percy" title="The Sea of Monsters">Book 1</a>
+  
 </html>
